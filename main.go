@@ -38,6 +38,7 @@ func main() {
 
 	app := cli.NewApp()
 	app.Name = "watchtower"
+	app.Version = "0.1.0"
 	app.Usage = "Automatically update running Docker containers"
 	app.Before = before
 	app.Action = start
