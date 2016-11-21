@@ -151,6 +151,8 @@ func (client dockerClient) IsContainerStale(c Container) (bool, error) {
 		log.Debugf("Pulling %s for %s", imageName, c.Name())
 
 		if username != "" && password != "" && email != "" {
+			log.Debugf("Using provided authentication details to pull image.")
+
 			auth := dockerclient.AuthConfig{
 				Username: username,
 				Password: password,
@@ -160,6 +162,8 @@ func (client dockerClient) IsContainerStale(c Container) (bool, error) {
 				return false, err
 			}
 		} else {
+			log.Debugf("No authentication details provided, treating image as public.")
+
 			if err := client.api.PullImage(imageName, nil); err != nil {
 				return false, err
 			}
