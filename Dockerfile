@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM resin/raspberrypi3-debian:jessie
 
-COPY watchtower /
-ENTRYPOINT ["/watchtower"]
+COPY watchtower-linux-arm /
+ENTRYPOINT ["/watchtower-linux-arm"]

@@ -1,6 +1,7 @@
 {
 	"ImportPath": "github.com/CenturyLinkLabs/watchtower",
 	"GoVersion": "go1.4.2",
+	"GodepVersion": "v75",
 	"Packages": [
 		"./..."
 	],
@@ -22,7 +23,7 @@
 		},
 		{
 			"ImportPath": "github.com/samalba/dockerclient",
-			"Rev": "15ebe064ca62ad0d64834e7ef0d4ed8ce9d02cde"
+			"Rev": "a3036261847103270e9f732509f43b5f98710ace"
 		},
 		{
 			"ImportPath": "github.com/stretchr/objx",
@@ -37,6 +38,11 @@
 			"ImportPath": "github.com/stretchr/testify/mock",
 			"Comment": "v1.0-17-g089c718",
 			"Rev": "089c7181b8c728499929ff09b62d3fdd8df8adff"
+		},
+		{
+			"ImportPath": "github.com/docker/go-units",
+			"Comment": "v0.3.1-8-g8a7beac",
+			"Rev": "8a7beacffa3009a9ac66bad506b18ffdd110cf97"
 		}
 	]
 }
